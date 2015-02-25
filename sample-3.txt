@@ -1,0 +1,4 @@
+let x = 10
+let y = 0
+LET z = 5
+Let 5 = h
