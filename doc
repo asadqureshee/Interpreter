@@ -1,0 +1,12 @@
+In this lab we had to create an interpreter that read after reading files had to perform initiliazation and simple arithmetic operations on them. Also, unit tests were created that allowed us to check the functionality of the program under different conditions provided. I did the coding JAVA. And separate classes apart from the main class were created that acts as unit tests. 
+What basically happens is that There is a readFile() class that is provided the path of a file as an argument after which it reads it line by line.  The following shows how the file is read.  
+let x = 10
+let y = 3
+y =x + 3 + 2 + y 
+x =6 + 7
+print y
+print x
+
+Each new entry / operations are inserted on a new line. In the code, I’m using tokenization to split the string into different parts. Basically, I tokenized two times. The first one was on the basis of a new line i.e. a new line character. The second tokenization was on the basis of a black space “ “. After that I’m using a for loop to determine what the first part of the string is e.g. LET , PRINT, Variable name etc. Then I’ve created 3 sub functions i.e. print(), let() and other(); The let function initializes the variable. I’m using HashMap for the storing of variables and their initializations in key value pairs. The print function takes out the value of the key provided and then prints it. The other function is basically the arithmetic function. This is where I’m doing all the operations like multiply, divide, subtract and add. In this function I’m tokenizing on the basis of “=” which splits the string into two parts and then the hash Map is again consulted to see variables and their corresponding values. And then further operations are done on the right hand side and then the result is stored into the left hand side, which contains the main variable in which the result is supposed to be stored. 
+I have created conditions/ exceptions that are thrown by the compiler if an error occurs. Also, in the code the string can execute a particular operation at a time i.e. one by one and then the next string is captured.Error handling such as If a variable is initialized as let 0 = x  instead of let x = 0, and if something else is written instead of variable names in string like x  y = 4 + 5 + x  instead of y = 4 + 5 + x  and many others. 
+Separate test files were created to test different aspects of the code. I created 3 sample files which include initialization tests, addition test, and other arithmetic operations tests. And they are all working fine. 
